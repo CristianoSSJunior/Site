@@ -24,7 +24,7 @@
         }
 
         .bye{
-            color: blue 
+            color: cyan
         }
 
         .bye:hover{
@@ -32,14 +32,50 @@
             color: white;
         }
 
+        .container-central {
+            position: relative;
+            width: 510px;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+
+        .linha-vertical-esquerda {
+            position: absolute;
+            top: 0;
+            left: 1;
+            width: 2px;
+            height: 100%;
+            background: cyan;
+            z-index: 10;
+        }
+
+        .linha-vertical-direita {
+            position: absolute;
+            top: 0;
+            right: -98px;
+            width: 2px;
+            height: 100%;
+            background: blue;
+            z-index: 10;
+        }
+        
+        .tabela-central {
+            width: 510px;
+            margin: 0 auto;
+            background-color: rgb(11, 13, 15);
+        }
+
     </style>
 </head>
 <body>
-    <center>
-        <table bgcolor="fff" width="510">
+    <div class="container-central">
+        <div class="linha-vertical-esquerda"></div>
+        <div class="linha-vertical-direita"></div>
+        <table class="tabela-central">
             <!--Cabeçalho - HOME -->            
             <tr>
                 <td>
+                    <!-- Título da página -->
                     <h1 style="color:white; padding: 10px; text-align:center"><ins>HOME</ins></h1>
                     <hr style="border: 1px solid purple;">
                     <br>
@@ -61,9 +97,10 @@
                     class="btn bye">BYE</a>
                     </p>
                     <hr>
-                    <!-- Texto de teste -->
-                    <p style="color:white; font-size:20px">Este arquivo foi criado com o intuito de <br>
-                    treinar códigos de HTML. :)</p>
+                    <!-- Texto de quote (citação) -->
+                    <blockquote style="color:white; font-size:20px">Este arquivo foi criado com o intuito de <br>
+                    treinar códigos de HTML. :)</blockquote>
+                    <q style="color:white; font-size:1px">Citação</q> <!-- Citação minuscula -->
                 </td>
             </tr>
             <tr>
@@ -72,7 +109,7 @@
                     <pre style="color:lightpink; font-size:15px">
     Através deste texto é possível observar
 
-que mesmo sem quebra de linha, o texto segue os espaços e quebras,
+ que mesmo sem quebra de linha, o texto segue os espaços e quebras,
 
     isso é possível por conta da tag <code>&lt;pre&gt;</code>.
                     </pre>
@@ -81,35 +118,35 @@ que mesmo sem quebra de linha, o texto segue os espaços e quebras,
             <tr>
                 <td>
                     <!--Lista 1-->
-                    <p style="color:aliceblue; font-size: 25px; padding-left:20px">Utiliza-se <code>&lt;ol&gt;</code>:</p>
+                    <p style="color:aliceblue; font-size: 25px; padding-left:20px">Utiliza-se <mark style="background-color: darkslategray;"><code>&lt;ol&gt;</code></mark>:</p>
                     <ol>
                         <li style="color: yellow; font-size: 20px;">Este é <del>um</del> exemplo de lista ordenada.</li>
-                        <br>
+                        
                         <li style="color:rgb(226, 199, 47); font-size: 18px">Você pode adicionar quantos <ins>itens quiser.</ins></li>
-                        <br>
+                        
                         <li style="color:blanchedalmond; font-size: 16px">As listas <sub>são</sub> úteis para organizar<sup>sup</sup> informações.</li>
-                        <br>
+                        
                         <li style="color:bisque; font-size: 14px">Você pode usar listas ordenadas ou não ordenadas.</li>
-                        <br>
+                        
                     </ol>
                 </td>
             </tr>
             <tr>
                 <td>
                     <!--Lista 2-->
-                    <p style="color:rgb(216, 236, 161); font-size: 25px;padding-left:20px">Utiliza-se <code>&lt;ul&gt;</code>:</p>
+                    <p style="color:rgb(216, 236, 161); font-size: 25px;padding-left:20px">Utiliza-se <mark style="background-color:darkslategray"><code>&lt;ul&gt;</code></mark>:</p>
                     <ul>
                         <li style="color: rgb(80, 34, 133); font-size: 20px;"><b>Este é um exemplo de lista não ordenada.</b></li>
-                        <br>
+                        
                         <li style="color:rgb(150, 78, 231); font-size: 18px"><i>Você pode adicionar quantos itens quiser.</i></li>
-                        <br>
+                        
                         <li style="color:rgb(151, 115, 192); font-size: 16px"><em>As listas são úteis para organizar informações.</em></li>
-                        <br>
+                        
                         <li style="color:rgb(226, 175, 241); font-size: 14px">Você pode <mark style="background-color: red; color:white">usar</mark> listas ordenadas ou não ordenadas.</li>
-                        <br>
+                        
                     </ul>
-                </td>  
             </tr>
+
             <tr>
                 <!-- Link para a próxima página -->
                 <td style="text-align:center; padding:10px">
@@ -120,6 +157,6 @@ que mesmo sem quebra de linha, o texto segue os espaços e quebras,
                 </td>
             </tr>
             </table>
-        </center>
+        </div>
     </body>
 </html>
