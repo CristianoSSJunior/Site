@@ -4,34 +4,10 @@
     <link rel="icon" href="/Assets/icon.png" type="image/png"> 
     <title>Página 1</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/styles.css">
     <style type="text/css">
-        body {
-            font-family: sans-serif;
-            background-color: #000
-        }
-        table {
-            border-collapse: collapse;
-            margin-top:15px
-        }
-
-        .btn{
-            border: none;
-            background-color: inherit;
-            padding: 2px 15px;
-            font-size: 16px;
-            cursor: pointer;
-            display: inline-block
-        }
-
-        .container-central {
-            position: relative;
-            width: 510px;
-            margin: 0 auto;
-            min-height: 100vh;
-        }
-
         .linha-vertical-esquerda {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             width: 2px;
@@ -39,9 +15,8 @@
             background: white;
             z-index: 10;
         }
-
         .linha-vertical-direita {
-            position: absolute;
+            position: fixed;
             top: 0;
             right: 0px;
             width: 2px;
@@ -49,13 +24,6 @@
             background: white;
             z-index: 10;
         }
-        
-        .tabela-central {
-            width: 510px;
-            margin: 0 auto;
-            background-color: rgb(11, 13, 15);
-        }
-
     </style>
 </head>
 <body>
@@ -83,11 +51,11 @@
                     <br>
                     <!-- Link para a página anterior -->
                     <a href="https://cristiano.convexcloud.com.br" target="_self">
-                        <img src="/home/cristiano/Documentos/Site/Paginas/Assets/seta2.png" alt="seta" width="50" class="btn"></a>
+                        <img src="../Paginas/Assets/seta2.png" alt="seta" width="50" class="btn"></a>
                    
                     <!-- Link para a próxima página -->
                     <a href="https://cristiano.convexcloud.com.br/Paginas/pagina1.html" target="_self">
-                        <img src="/home/cristiano/Documentos/Site/Paginas/Assets/seta.png" alt="Seta" width="50" class="btn"></a>
+                        <img src="../Paginas/Assets/seta.png" alt="Seta" width="50" class="btn"></a>
                 </td>
             </tr>
             </table>

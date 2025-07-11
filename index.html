@@ -4,65 +4,22 @@
     <link rel="icon" href="/Assets/icon.png" type="image/png"> 
     <title>Projeto</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/styles.css">
     <style type="text/css">
-        body {
-            font-family: sans-serif;
-            background-color: #000
-        }
-        table {
-            border-collapse: collapse;
-            margin-top:15px
-        }
-
-        .btn{
-            border: none;
-            background-color: inherit;
-            padding: 2px 15px;
-            font-size: 16px;
-            cursor: pointer;
-            display: inline-block
-        }
-
+        
         .bye{
-            color: cyan
+            color: cyan;
+            font-size: 18px;
+            padding: 10px
         }
 
         .bye:hover{
             background-color: blueviolet;
             color: white;
-        }
-
-        .container-central {
-            position: relative;
-            width: 510px;
-            margin: 0 auto;
-            min-height: 100vh;
-        }
-
-        .linha-vertical-esquerda {
-            position: absolute;
-            top: 0;
-            left: 1;
-            width: 2px;
-            height: 100%;
-            background: white;
-            z-index: 10;
-        }
-
-        .linha-vertical-direita {
-            position: absolute;
-            top: 0;
-            right: -98px;
-            width: 2px;
-            height: 100%;
-            background: white;
-            z-index: 10;
-        }
-        
-        .tabela-central {
-            width: 510px;
-            margin: 0 auto;
-            background-color: rgb(11, 13, 15);
+            border-radius: 10px;
+            transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ;
+            transform: scale(1.2);
+            opacity: 0.8;
         }
 
     </style>
@@ -92,7 +49,7 @@
                      style="border: 2px solid white; border-radius: 5px;">
                     <hr>
                     <!--Botão para link do youtube-->
-                    <p style="color:darkslateblue; font-size:25px"><a
+                    <p><a
                     href="https://encurtador.com.br/1ipS5" target="_blank"
                     class="btn bye">BYE</a>
                     </p>
@@ -118,7 +75,7 @@
             <tr>
                 <td>
                     <!--Lista 1-->
-                    <p style="color:aliceblue; font-size: 25px; padding-left:20px">Utiliza-se <mark style="background-color: darkslategray;"><code>&lt;ol&gt;</code></mark>:</p>
+                    <p style="color:aliceblue; font-size: 25px; padding-left:20px">Utiliza-se <mark style="background-color: #696969;"><code>&lt;ol&gt;</code></mark>:</p>
                     <ol>
                         <li style="color: yellow; font-size: 20px;">Este é <del>um</del> exemplo de lista ordenada.</li>
                         
@@ -134,7 +91,7 @@
             <tr>
                 <td>
                     <!--Lista 2-->
-                    <p style="color:rgb(216, 236, 161); font-size: 25px;padding-left:20px">Utiliza-se <mark style="background-color:darkslategray"><code>&lt;ul&gt;</code></mark>:</p>
+                    <p style="color:rgb(216, 236, 161); font-size: 25px;padding-left:20px">Utiliza-se <mark style="background-color:#696969"><code>&lt;ul&gt;</code></mark>:</p>
                     <ul>
                         <li style="color: rgb(80, 34, 133); font-size: 20px;"><b>Este é um exemplo de lista não ordenada.</b></li>
                         
@@ -142,7 +99,8 @@
                         
                         <li style="color:rgb(151, 115, 192); font-size: 16px"><em>As listas são úteis para organizar informações.</em></li>
                         
-                        <li style="color:rgb(226, 175, 241); font-size: 14px">Você pode <mark style="background-color: red; color:white">usar</mark> listas ordenadas ou não ordenadas.</li>
+                        <li style="color:rgb(226, 175, 241); font-size: 14px">Você pode <mark style="background-color: red; color:white">usar</mark>
+                            <span style="color:blueviolet; font-weight: bold;">listas ordenadas</span> ou não ordenadas.</li>
                         
                     </ul>
                 </td>
@@ -153,8 +111,7 @@
                 <td style="text-align:center; padding:10px">
                     <hr style="border: 1px solid white;">
                     <br>
-                    <a href="https://cristiano.convexcloud.com.br" target="_self">
-                        <img src="Paginas/Assets/seta2.png" alt="seta" width="50" class="btn"></a>
+                        <img src="Paginas/Assets/seta2.png" alt="seta" width="50" class="invalid-btn">
                         
                     <a href="https://cristiano.convexcloud.com.br/Paginas/pagina1.html" target="_self">
                         <img src="Assets/seta.png" alt="Seta" width="50" class="btn"></a>
