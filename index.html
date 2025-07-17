@@ -6,6 +6,9 @@
     <meta charset="UTF-8"> 
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
     <style type="text/css"> 
+        .div-coll{
+            margin: 15px
+        }
 
     </style>
 </head>
@@ -21,13 +24,14 @@
                     <h1 style="color:white; padding: 10px; text-align:center"><ins>HOME</ins></h1>
                     
                     <!-- Botão Collapse -->    
-                    <button type="button "class="collapsible">Páginas</button>
-                    <div class="content">
-                        <ul>
-                            <a class ="a:link" href="https://cristiano.convexcloud.com.br/Paginas/pagina1.html" target="_self"><span>Página 1</span></a>
-                            <a href="" target="_self"><span>Página 2(WIP)</a>
-                            <a href="" target="_self">Página 3(WIP)</a>
-                        </ul>
+                    <button style="margin-left:20%" type="button "class="collapsible">Páginas</button>
+                    <!-- Conteúdo do botão -->
+                    <div style="margin-left: 18%" class="content">
+                            <div class="div-coll"><a  class="links-collapse" 
+                            href="https://cristiano.convexcloud.com.br/Paginas/pagina1.html"target="_self">Página </a></div>
+                            <div class="div-coll"><a class="links-collapse" href="" target="_self"><span>Página 2(WIP)</span></a></div>
+                            <div class="div-coll"><a class="links-collapse" href="" target="_self"><span>Página 3(WIP)</span></a></div>
+
                     </div>
 
                     <!--Linha horizontal-->
@@ -46,10 +50,8 @@
                      style="border: 2px solid white; border-radius: 5px; color: white">
                     <hr>
                     <!--Botão para link do youtube-->
-                    <p><a
-                    href="https://encurtador.com.br/1ipS5" target="_blank"
-                    class="btn bye">BYE</a>
-                    </p>
+                    <p><a href="https://encurtador.com.br/1ipS5" target="_blank" type="button"
+                    class="btn bye">BYE</a></p>
                     <hr>
                     <!-- Texto de quote (citação) -->
                     <blockquote style="color:white; font-size:20px">Este arquivo foi criado com o intuito de <br>

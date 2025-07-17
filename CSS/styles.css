@@ -7,6 +7,7 @@
             margin-top:15px
         }
 
+
         /* Estilo para links */
         a{  
             
@@ -16,26 +17,54 @@
         }
 
         a:link{
-            font-family: 'proxima-soft', sans-serif;
-            color: white;
+            font-family: 'proxima-soft', sans-serif;;
             background-color: transparent;
             text-decoration: none;
             font-size: 20px;
+            font-weight: bold;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        a:visited{
+            font-family: 'proxima-soft', sans-serif;
+            color: cyan;
+            background-color: transparent;
+            text-decoration: none;
         }
 
         a:hover{
             font-family: 'proxima-soft', sans-serif;
-            color: #9a7cecad;
+            color: #7d64c0dc;
+            font-weight: bold;
             background-color: transparent;
             text-decoration: none;
             transition: color 0.3s ease, font-size 0.3s ease;
         }
 
-        a:visited{
+        .links-collapse {
             font-family: 'proxima-soft', sans-serif;
-            color: #99d9ecd5;
+            color: #ffffff;
             background-color: transparent;
             text-decoration: none;
+            font-size: 20px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        .links-collapse:visited {
+            font-family: 'proxima-soft', sans-serif;
+            color: #ffffff;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .links-collapse:hover {
+            font-family: 'proxima-soft', sans-serif;
+            color: #7d64c0dc;
+            background-color: transparent;
+            text-decoration: none;
+            transition: color 0.3s ease, font-size 0.3s ease;
         }
 
         /* Classe para todos os botões */
@@ -157,64 +186,46 @@
         .collapsible:after {
         content: '\2304';
         font-size: 14px; 
-        color: white;
-        float: right;  
+        color: white;  
         margin-left: 5px;
-        transform: rotate(0deg);
+        margin-right: 0px;
         font-weight: bold;
-        transition: ease 0.3s;    
+        transition: transform ease 0.3s;
+        display: inline-block;
+        
+        }
+        /* Talvez use no futuro
+        .arrow {
+        display: inline-block;
+        transition: transform 0.3s;
+        font-size: 14px; 
+        color: white;  
+        margin-left: 5px;
+        margin-right: 0px;
+        font-weight: bold;
         }
 
+        .collapsible.active .arrow {
+        transform: rotate(180deg);
+        } */
+
         .active:after {
-        rotate: -180deg;
+        transform:rotate(180deg);
+        transform-origin: center;
         transition: ease 0.3s;
         }
 
+        /* Estilo para o conteúdo do colapso */
         .content {
             position: inherit;
             border-radius: 5px;
             padding: 2 2px;
-            width: 20%;
+            width: 24%;
+            max-width: 180px;
             background-color: #161616d2;
             color: white;
             max-height: 0;
             overflow: hidden;
-            margin-left: 12px;
+            margin: 12px;
             transition: max-height 0.2s ease-out;
         }
-
-        a.tooltips {
-position: relative;
-display: inline;
-}
-a.tooltips span {
-position: absolute;
-width:140px;
-color: #FFFFFF;
-background: #000000;
-height: 30px;
-line-height: 30px;
-text-align: center;
-visibility: hidden;
-border-radius: 6px;
-}
-a.tooltips span:after {
-content: '';
-position: absolute;
-top: 100%;
-left: 50%;
-margin-left: -8px;
-width: 0; height: 0;
-border-top: 8px solid #000000;
-border-right: 8px solid transparent;
-border-left: 8px solid transparent;
-}
-a:hover.tooltips span {
-visibility: visible;
-opacity: 0.8;
-bottom: 30px;
-left: 50%;
-margin-left: -76px;
-z-index: 999;
-}
-
