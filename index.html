@@ -19,26 +19,39 @@
         <div class="linha-vertical-direita"></div>
         <table class="tabela-central">           
             <tr>
-                <td class="Cabeçalho">
+                <td class="Cabecalho">
                     <!-- Título da página -->
-                    <h1 style="color:rgb(179, 180, 241); padding: 10px; text-align:center"><ins>
+                    <h1 style="color:rgb(179, 180, 241); padding: 10px; text-align:center; margin: 2px"><ins>
                         <a href="https://cristiano.convexcloud.com.br" target="_self" type="button">HOME<a></a></ins></h1>
-                    
-                    <!-- Botão Collapse de Páginas-->    
-                    <button style="margin-left:20%" type="button "class="collapsible">Páginas</button>
-                    <!-- Conteúdo do botão --> 
-                    <div style="margin-left: 18%" class="content">
+                
+                    <!-- Botões de Collapse-->
+                     <div style=" display: flex; justify-content: center; gap: 20px; margin-top: 10px">
+                        <button style="margin-left: 20%; display: flex" type="button "class="collapsible">Páginas</button>
+                            <!-- Conteúdo de Páginas -->
+                        <div style="margin-left: 18%" class="content">
                             <div class="div-coll"><a  class="links-collapse" 
-                          href="https://cristiano.convexcloud.com.br/Paginas/pagina1.html"target="_self">Página 1</a></div>
-                            <div class="div-coll"><a class="links-collapse" href="" target="_self"><span>Página 2(WIP)</span></a></div>
-                            <div class="div-coll"><a class="links-collapse" href="" target="_self"><span>Página 3(WIP)</span></a></div>
-                        </div>
-
-                    <div>
+                          href="https://cristiano.convexcloud.com.br/Paginas/pagina1.html" target="_self">Página 1</a></div>
+                            <div class="div-coll"><a class="links-collapse" href="" target="_self">Página 2(WIP)</a></div>
+                            <div class="div-coll"><a class="links-collapse" href="" target="_self">Página 3(WIP)</a></div>  
                         
+                        </div>
                     </div>
-                    
-                    <br>
+                        <!-- Botão de Sobre-->
+                        <button style="margin-left: 20%" type="button" class="collapsible">Sobre</button>
+                            <!-- Conteúdo de Sobre -->
+                            <div style="margin-left: 18%" class="content">
+                            <div class="div-coll"><a class="links-collapse" href="" target="_self">Sobre ETC.</a></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conteúdo de Sobre -->
+                    <div style="margin-left: 18%" class="content">
+                            <div class="div-coll"><a class="links-collapse" href="" target="_self">Sobre ETC.</a></div>
+
+                        </div>
+                                
                 </td>
             </tr>
             <td>
@@ -47,7 +60,7 @@
                 
             </td>
 
-            <tr><!-- Header Row -->
+            <tr>
                 <th style="color:yellow; font-size:20px">See the following example image:</th>
             </tr>
             <tr>    
