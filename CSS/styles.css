@@ -170,6 +170,7 @@
             margin-right: 8px;
             display: inline-block;
             margin: 8px ;
+            margin-left: 20%;
             padding: 20px;
             background-color: rgba(47, 6, 112, 0.445);
             color: white;
@@ -227,14 +228,15 @@
             position: inherit;
             border-radius: 5px;
             padding: 2 2px;
-            width: 24%;
+            width: 100%;
             max-width: 180px;
             background-color: #161616d2;
             color: white;
             max-height: 0;
-            overflow: hidden;
             margin: 12px;
+            margin-left: 18%;
             transition: max-height 0.2s ease-out;
+            overflow: hidden;
         }
 
               /* Listas */
@@ -249,4 +251,8 @@
 
         li{
             margin-bottom: 12px; 
+        }
+
+        .div-coll{
+            margin: 10px ;
         }

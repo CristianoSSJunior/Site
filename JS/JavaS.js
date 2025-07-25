@@ -15,6 +15,7 @@ for (i = 0; i < coll.length; i++) {
     });
     }
 
+// Funções para exibir e esconder o texto
     function exibirTexto() {
     document.getElementById("meuTexto").style.display = "block";
   }
