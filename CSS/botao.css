@@ -1,0 +1,99 @@
+/* Classe para todos os botões */
+        .btn{
+            border: none;
+            background-color: transparent;
+            padding: 2px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .btn:hover{
+            background-color: transparent ;
+            transform: scale(1.2);
+            transition: 0.2s ease;
+        }
+
+        /* Botão de modo claro/escuro */
+        .mode {
+            left: 400px;
+            background-color: transparent;
+            border: none;
+        }
+
+        /* Botão de bye do HOME*/
+        .bye{
+            color: cyan;
+            font-size: 18px;
+            padding: 10px
+        }
+
+        .bye:hover{
+            background-color: blueviolet;
+            color: white;
+            border-radius: 10px;
+            transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ;
+            transform: scale(1.2);
+            opacity: 0.8;
+        }
+
+        /* Botão inválido*/
+        .invalid-btn{
+            border: none;
+            background-color: inherit;
+            padding: 2px 15px;
+            font-size: 16px;
+            cursor: not-allowed;
+            display: inline-block;
+            color: gray;
+            opacity: 0.5;
+        }
+
+        /* Estilo para o botão de colapsar */
+        .collapsible {
+            border-radius: 10px;
+            text-align: center;
+            font-family: 'proxima-soft', sans-serif;
+            font-weight: bold;
+            font-size: 18px ;
+            margin: 8px ;
+            margin-left: 22px;
+            margin-top: 12px;
+            margin-right: 0px;
+            display: inline-block;
+            padding: 20px;
+            background-color: rgba(47, 6, 112, 0.445);
+            color: white;
+            cursor: pointer;
+            width: auto ;
+            border: none;
+            outline: none;
+        }
+
+        .active, .collapsible:hover {
+        background-color: #ca9ad66c;
+        color: rgb(170, 135, 202);
+        transition: background-color 0.3s ease, color 0.8s ease
+        }
+
+        /* Arrowhead direto no botão de collapse */
+        .collapsible:after {
+        content: '\25BC';
+        font-size: 10px; 
+        color: white;  
+        margin-left: 5px;
+        margin-right: 0px;
+        font-weight: bold;
+        float: right;
+        transition: transform 0.3s linear;
+        position: relative;
+        top: 7px;
+        left: 3px;
+        transform: rotate(0deg); 
+
+        }
+        .active:after {
+        position: relative;
+        transform: rotate(-180deg);
+        transition: transform 0.3s linear;
+        }

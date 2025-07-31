@@ -5,6 +5,7 @@
     <title>Projeto</title>
     <meta charset="UTF-8"> 
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="CSS/botao.css">
     <style type="text/css"> 
 
     </style>
@@ -12,37 +13,36 @@
 <body class="darkmode">
     <script src="JS/JavaS.js" defer></script>
     <div class="container-central">
-        <div class="linha-vertical-esquerda"></div>
-        <div class="linha-vertical-direita"></div>
+    <div class="linha-vertical-esquerda"></div>
+    <div class="linha-vertical-direita"></div>
         <table class="tabela-central">           
             <tr>
-                <td class="Cabecalho">
-            <div style="display: flex; justify-content: center; margin-top: 10px; align-items: flex-start;">
+                <td class="Cabecalho lightmode">
+            <div style="display: flex; justify-content: center; align-items: flex-start;">
                 
                 <!-- Título da página -->
                 <h1 style="color:rgb(179, 180, 241); padding: 10px; text-align:center; margin: 2px; margin-left: -5px; left: 37px"><ins>
-                    <a href="https://cristiano.convexcloud.com.br" target="_self" type="button">HOME<a></a></ins></h1>
+                    <a href="https://cristiano.convexcloud.com.br" target="_self" type="button">HOME</a></ins></h1>
 
                 <!-- Botão para alternar entre modos -->
-                <buttom id="toggle-mode">
-                    <img id="mode-icon" src="Assets/solB.png" onclick="toggleMode()" alt="Sol" width=60" class="btn" style="left: 300%; bottom: 15px 0px;">
-                </buttom>
+                <button id="toggle-mode" type="button" class="mode";>
+                    <img id="mode-icon" src="Assets/solB.png" onclick="toggleMode()" alt="Sol" width="50" class="btn mode" style="bottom: 15px 0px;">
+                </button>
             </div>
 
                 <!-- Botões de Collapse-->
-                <div style="display: flex; justify-content: center; gap: px; margin-left: -55px; margin-top: 10px; align-items: center flex-start;">
+                <div style="display: flex; justify-content: center; gap: 5px; margin-left: -55px; margin-top: 10px; align-items: center flex-start;">
                     <!-- Botão Páginas -->
                     <div>
-                        <button type="button "class="collapsible">Páginas</button>
+                        <button type="button" class="collapsible">Páginas</button>
                             <!-- Conteúdo de Páginas -->
                         <div class="content">
                             <div class="div-coll">  
-                                <a  class="links-collapse" href="https://cristiano.convexcloud.com.br/Paginas/pagina1.html" target="_self">Página 1</a></div>
+                                <a class="links-collapse" href="https://cristiano.convexcloud.com.br/Paginas/pagina1.html" target="_self">Página 1</a></div>
                             <div class="div-coll">
                                 <a class="links-collapse" href="" target="_self">Página 2(WIP)</a></div>
                             <div class="div-coll">
-                                <a class="links-collapse" href="" target="_self">Página 3(WIP)</a>
-                            </div>  
+                                <a class="links-collapse" href="" target="_self">Página 3(WIP)</a></div>  
                         </div>
                     </div>
 
@@ -54,17 +54,18 @@
                             <div class="div-coll">
                                 <a class="links-collapse" href="https://cristiano.convexcloud.com.br/Paginas/sobre.html" target="_self">Site</a>  
                             </div>
-
                         </div>
                     </div>
                 </div>      
 
-
                 </td>
             </tr>
-            <td>
-                <!--Linha horizontal-->
-                    <hr style="border: 1px solid purple; margin-top: 0px; margin-bottom: 30px">
+            <tr>
+                <td>
+                    <!--Linha horizontal-->
+                    <hr style="border: 1px solid purple; margin-top: -1px; margin-bottom: 30px">
+                </td>
+            </tr>
                 
             </td>
 
@@ -84,9 +85,9 @@
                     <hr>
 
                     <!-- Texto de quote (citação) -->
-                    <blockquote style="color:white; font-size:20px">Este arquivo foi criado com o intuito de <br>
+                    <blockquote style="background-color:#000 ;color:white; font-size:20px; padding: 10px; max-width: 40%; left: 470px;">Este arquivo foi criado com o intuito de <br>
                     treinar códigos de HTML. :)</blockquote>
-                    <q style="color:white; font-size:1px">Citação</q> <!-- Citação minuscula -->
+                    <q style="color:rgb(59, 59, 59); font-size:1px">Citação</q> <!-- Citação minuscula -->
                 </td>
             </tr>
             <tr>
@@ -104,15 +105,15 @@ isso é possível por conta da tag <code>&lt;pre&gt;</code>.
             <tr style="padding: 30px">
                 <td>
                     <!--Lista 1-->
-                    <p style="color:aliceblue; font-size: 25px; text-align: center;">Utiliza-se <mark style="background-color: #6969696c;"><code>&lt;ol&gt;</code></mark>:</p>
+                    <p style="color:rgb(6, 2, 61); font-size: 25px; text-align: center;">Utiliza-se <mark style="background-color: #6969696c;"><code>&lt;ol&gt;</code></mark>:</p>
                     <ol>
-                        <li style="color:rgb(226, 199, 47); font-size: 20px">Este é <del>um</del> exemplo de lista ordenada.</li>
+                        <li style="color:rgb(12, 57, 155); font-size: 20px">Este é <del>um</del> exemplo de lista ordenada.</li>
                         
-                        <li style="color:rgb(238, 216, 94); font-size: 18px">Você pode adicionar quantos <ins>itens quiser.</ins></li>
+                        <li style="color:rgb(0, 102, 255); font-size: 18px">Você pode adicionar quantos <ins>itens quiser.</ins></li>
                         
-                        <li style="color:rgb(245, 238, 149); font-size: 16px">As listas <sub>são</sub> úteis para organizar<sup>sup</sup> informações.</li>
+                        <li style="color:rgb(91, 126, 241); font-size: 16px">As listas <sub>são</sub> úteis para organi<sup>zar</sup> informações.</li>
                         
-                        <li style="color:rgb(213, 214, 158); font-size: 14px">Você pode usar listas ordenadas ou não ordenadas.</li>
+                        <li style="color:rgb(134, 155, 224); font-size: 14px">Você pode usar listas ordenadas ou não ordenadas.</li>
                         
                     </ol>
                 </td>
@@ -120,7 +121,7 @@ isso é possível por conta da tag <code>&lt;pre&gt;</code>.
             <tr>
                 <td style="padding:10px">
                     <!--Lista 2-->
-                    <p style="color:rgb(216, 236, 161); font-size: 25px; text-align: center">Utiliza-se <mark style="background-color:#69696963"><code>&lt;ul&gt;</code></mark>:</p>
+                    <p style="color:rgb(147, 89, 255); font-size: 25px; text-align: center">Utiliza-se <mark style="background-color:#69696963"><code>&lt;ul&gt;</code></mark>:</p>
                     <ul>
                         <li style="color: rgb(80, 34, 133); font-size: 20px;"><b>Este é um exemplo de lista não ordenada.</b></li>
                         
@@ -137,8 +138,12 @@ isso é possível por conta da tag <code>&lt;pre&gt;</code>.
 
             <!-- Link para a próxima página -->
             <tr>
-                <td style="text-align:center; padding:10px">
-                    <hr style="border: 1px solid white;">
+                <tr>
+                    <td>
+                        <hr style="border: px solid rgb(134, 124, 124); margin-bottom: 0px">
+                    </td>
+                </tr>
+                <td style="text-align:center; padding: 10px; background-color:#010308;">
                     <br>
                         <img src="Assets/seta2.png" alt="seta" width="50" class="invalid-btn">
                         
