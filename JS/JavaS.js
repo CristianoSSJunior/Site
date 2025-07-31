@@ -16,13 +16,14 @@ for (i = 0; i < coll.length; i++) {
     }
 
     document.getElementById('toggle-mode').onclick = function() {
-        document.body.classList.toggle('lightmode');
         document.body.classList.toggle('darkmode');
+        document.body.classList.toggle('lightmode');
         // Troca o texto do botão
         var modeIcon = document.getElementById('mode-icon');
         if (document.body.classList.contains('lightmode')) {
             modeIcon.src = 'Assets/moonB.png'; // Ícone para modo claro
             modeIcon.alt = 'Modo Claro';
+
         } else {
             modeIcon.src = 'Assets/solB.png'; // Ícone para modo escuro
             modeIcon.alt = 'Modo Escuro';
