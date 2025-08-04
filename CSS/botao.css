@@ -46,7 +46,8 @@
             cursor: not-allowed;
             display: inline-block;
             color: gray;
-            opacity: 0.5;
+            opacity: 0.3;
+            transform: rotate(180deg);
         }
 
         /* Estilo para o botão de colapsar */

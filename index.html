@@ -13,21 +13,24 @@
 <body class="darkmode">
     <script src="JS/JavaS.js" defer></script>
     <div class="container-central">
-    <div class="linha-vertical-esquerda"></div>
-    <div class="linha-vertical-direita"></div>
+    <!--<div class="linha-vertical-esquerda"></div>
+    <div class="linha-vertical-direita"></div>!-->
         <table class="tabela-central">           
             <tr>
-                <td class="Cabecalho lightmode">
+                <td class="Cabecalhodarkmode" id="header">
             <div style="display: flex; justify-content: center; align-items: flex-start;">
                 
                 <!-- Título da página -->
-                <h1 style="color:rgb(179, 180, 241); padding: 10px; text-align:center; margin: 2px; margin-left: -5px; left: 37px"><ins>
-                    <a href="https://cristiano.convexcloud.com.br" target="_self" type="button">HOME</a></ins></h1>
-
+                <div style="display: flex; position: relative; left: 40px; top: 10px;">
+                    <h1 style="color:rgb(179, 180, 241); padding: 10px;"><ins>
+                        <a href="https://cristiano.convexcloud.com.br" target="_self" type="button">HOME</a></ins></h1>
+                </div>
                 <!-- Botão para alternar entre modos -->
-                <button id="toggle-mode" type="button" class="mode";>
-                    <img id="mode-icon" src="Assets/solB.png" onclick="toggleMode()" alt="Sol" width="50" class="btn mode" style="bottom: 15px 0px;">
-                </button>
+                <div style=" display: flex; position: relative; left: 400px; top: 10px">
+                    <button id="toggle-mode" type="button" class="mode";>
+                        <img id="mode-icon" src="Assets/solB.png" onclick="toggleMode()" alt="Sol" width="50" class="btn" style="bottom: 15px 0px;">
+                    </button>
+                </div>
             </div>
 
                 <!-- Botões de Collapse-->
@@ -52,8 +55,10 @@
                         <!-- Conteúdo de Sobre -->
                         <div class="content">
                             <div class="div-coll">
-                                <a class="links-collapse" href="https://cristiano.convexcloud.com.br/Paginas/sobre.html" target="_self">Site</a>  
+                                <a class="links-collapse" href="https://cristiano.convexcloud.com.br/Paginas/sobre.html" target="_self">Site</a>
                             </div>
+                        </div>
+
                         </div>
                     </div>
                 </div>      
@@ -66,17 +71,17 @@
                     <hr style="border: 1px solid purple; margin-top: -1px; margin-bottom: 30px">
                 </td>
             </tr>
-                
-            </td>
+
+            <!-- Conteúdo da Página -->
 
             <tr>
-                <th style="color:yellow; font-size:20px">See the following example image:</th>
+                    <th style="color:yellow; font-size:20px">See the following example image:</th>
             </tr>
             <tr>    
                 <!-- Imagem de exemplo -->
                 <td style="text-align:center; padding:10px">
                     <img src="/Assets/exampledark.jpg" alt="Dark example" width="500"
-                     style="border: 2px solid white; border-radius: 5px; color: white">
+                     style="border: 2px solid rgb(131, 131, 131); border-radius: 5px; color: white">
                     <hr>
                     
                     <!--Botão para link do youtube-->
@@ -85,27 +90,32 @@
                     <hr>
 
                     <!-- Texto de quote (citação) -->
-                    <blockquote style="background-color:#000 ;color:white; font-size:20px; padding: 10px; max-width: 40%; left: 470px;">Este arquivo foi criado com o intuito de <br>
-                    treinar códigos de HTML. :)</blockquote>
+                    <div style="display: inline-block; justify-content: center; padding: 1px; background-color:#000; border-radius: 20px; margin: 20px; width: 350px;">
+                        <blockquote style="background-color: #020007;color:white; font-size:20px; padding: 10px;"
+                        >Este arquivo foi criado com o intuito de <br>
+                        treinar códigos de HTML. :)</blockquote>
+                    </div>    
                     <q style="color:rgb(59, 59, 59); font-size:1px">Citação</q> <!-- Citação minuscula -->
                 </td>
             </tr>
             <tr>
-                <td style="text-align:center; padding:10px">
-                    <!--Texto de exemplo-->
-                    <pre style="color:lightpink; font-size:15px">
+                <div style=" background-color: #fff;">
+                    <td style="text-align:center; padding:10px">
+                        <!--Texto de exemplo-->
+                        <pre style="color:lightpink; font-size:15px">
 Através deste texto é possível observar
 
 que mesmo sem quebra de linha, o texto segue os espaços e quebras,
 
 isso é possível por conta da tag <code>&lt;pre&gt;</code>.
-                    </pre>
-                </td>
+                        </pre>
+                    </td>
+                </div>
             </tr> 
             <tr style="padding: 30px">
                 <td>
                     <!--Lista 1-->
-                    <p style="color:rgb(6, 2, 61); font-size: 25px; text-align: center;">Utiliza-se <mark style="background-color: #6969696c;"><code>&lt;ol&gt;</code></mark>:</p>
+                    <p style="color:rgb(19, 13, 112); font-size: 25px; text-align: center;">Utiliza-se <mark style="background-color: #6969696c;"><code>&lt;ol&gt;</code></mark>:</p>
                     <ol>
                         <li style="color:rgb(12, 57, 155); font-size: 20px">Este é <del>um</del> exemplo de lista ordenada.</li>
                         
@@ -135,7 +145,6 @@ isso é possível por conta da tag <code>&lt;pre&gt;</code>.
                     </ul>
                 </td>
             </tr>
-
             <!-- Link para a próxima página -->
             <tr>
                 <tr>
@@ -143,12 +152,14 @@ isso é possível por conta da tag <code>&lt;pre&gt;</code>.
                         <hr style="border: px solid rgb(134, 124, 124); margin-bottom: 0px">
                     </td>
                 </tr>
-                <td style="text-align:center; padding: 10px; background-color:#010308;">
+                <td id="header" class="Cabecalhodarkmode"  style="text-align:center; padding: 10px;">
+                        <!-- Link para a página anterior -->
+                    <a href="https://cristiano.convexcloud.com.br" target="_self">
                     <br>
-                        <img src="Assets/seta2.png" alt="seta" width="50" class="invalid-btn">
+                        <img src="Assets/setaB.png" alt="Seta" width="50" class="invalid-btn"></a>
                         
                     <a href="https://cristiano.convexcloud.com.br/Paginas/pagina1.html" target="_self">
-                        <img src="Assets/seta.png" alt="Seta" width="50" class="btn"></a>
+                        <img src="Assets/setaB.png" alt="Seta" width="50" class="btn"></a>
                 </td>
             </tr>
             </table>

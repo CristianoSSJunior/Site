@@ -10,71 +10,83 @@
 
     </style>
 </head>
-<body>
+<body class="darkmode">
     <script src="../JS/JavaS.js" defer></script>
     <div class="container-central">
-        <div class="linha-vertical-esquerda"></div>
-        <div class="linha-vertical-direita"></div>
-        <table class="tabela-central">
-            <!--Cabeçalho - Página 1 -->            
+    <!--<div class="linha-vertical-esquerda"></div>
+    <div class="linha-vertical-direita"></div>!-->
+        <table class="tabela-central">           
             <tr>
-                <td class="Cabecalho">
-                    <h1 style="color:white; padding: 10px; text-align:center"><ins>Página 1</ins></h1>
+                <td class="Cabecalhodarkmode" id="header">
+            <div style="display: flex; justify-content: center; align-items: flex-start;">
+                
+                <!-- Título da página -->
+                <div style="display: flex; position: relative; left: 40px; top: 10px;">
+                    <h1 style="color:rgb(179, 180, 241); padding: 10px;"><ins>
+                        <a href="https://cristiano.convexcloud.com.br" target="_self" type="button">Página 1 </a></ins></h1>
+                </div>
+                <!-- Botão para alternar entre modos -->
+                <div style=" display: flex; position: relative; left: 400px; top: 10px">
+                    <button id="toggle-mode" type="button" class="mode";>
+                        <img id="mode-icon" src="../Assets/solB.png" onclick="toggleMode()" alt="Sol" width="50" class="btn" style="bottom: 15px 0px;">
+                    </button>
+                </div>
+            </div>
 
-                    <!-- Botões de Collapse-->
-                <div style="display: flex; justify-content: center; gap: 5px; margin-top: 10px; align-items: flex-start;">
+                <!-- Botões de Collapse-->
+                <div style="display: flex; justify-content: center; gap: 5px; margin-left: -55px; margin-top: 10px; align-items: center flex-start;">
                     <!-- Botão Páginas -->
                     <div>
-                        <button type="button "class="collapsible">Páginas</button>
+                        <button type="button" class="collapsible">Páginas</button>
                             <!-- Conteúdo de Páginas -->
                         <div class="content">
                             <div class="div-coll">  
-                                <a  class="links-collapse" href="https://cristiano.convexcloud.com.br/Paginas/pagina1.html" target="_self">Página 1</a></div>
+                                <a class="links-collapse" href="https://cristiano.convexcloud.com.br/Paginas/pagina1.html" target="_self">Página 1</a></div>
                             <div class="div-coll">
                                 <a class="links-collapse" href="" target="_self">Página 2(WIP)</a></div>
                             <div class="div-coll">
-                                <a class="links-collapse" href="" target="_self">Página 3(WIP)</a>
-                            </div>  
+                                <a class="links-collapse" href="" target="_self">Página 3(WIP)</a></div>  
                         </div>
                     </div>
 
-                        <!-- Botão de Sobre-->
+                    <!-- Botão de Sobre-->
                     <div>
                         <button style="width: 110px;" type="button" class="collapsible">Sobre</button>
                         <!-- Conteúdo de Sobre -->
                         <div class="content">
                             <div class="div-coll">
-                                <a class="links-collapse" href="" target="_self">Sobre ETC.</a>  
+                                <a class="links-collapse" href="https://cristiano.convexcloud.com.br/Paginas/sobre.html" target="_self">Site</a>  
                             </div>
-
                         </div>
                     </div>
-                </div>
+                </div>      
 
-                </td>
-            </tr>
-            <td>
-                <!--Linha horizontal-->
-                <hr style="border: 1px solid purple; margin-top: 0px; margin-bottom: 30px">
-            </td>
-
-            <!-- Conteúdo da página -->
-            <tr>
-                <td>
-                    <!-- Conteúdo da página pode ser adicionado aqui -->
                 </td>
             </tr>
             <tr>
-                <td style="text-align:center; padding:10px">
-                    <hr style="border: 1px solid white;">
-                    <br>
-                    <!-- Link para a página anterior -->
+                <td>
+                    <!--Linha horizontal-->
+                    <hr style="border: 1px solid purple; margin-top: -1px; margin-bottom: 30px">
+                </td>
+            </tr>
+
+            <!-- Conteúdo da Página -->
+
+            <!-- Link para a próxima página -->
+            <tr>
+                <tr>
+                    <td>
+                        <hr style="border: px solid rgb(134, 124, 124); margin-bottom: 0px">
+                    </td>
+                </tr>
+                <td id="header" class="Cabecalhodarkmode"  style="text-align:center; padding: 10px;">
+                        <!-- Link para a página anterior -->
                     <a href="https://cristiano.convexcloud.com.br" target="_self">
-                        <img src="../Assets/seta2.png" alt="seta" width="50" class="btn"></a>
-                   
-                    <!-- Link para a próxima página -->
+                    <br>
+                        <img src="../Assets/setaB.png" alt="Seta" width="50" class="btn" style="transform: rotate(180deg)"></a>
+                        
                     <a href="https://cristiano.convexcloud.com.br/Paginas/pagina1.html" target="_self">
-                        <img src="../Assets/seta.png" alt="Seta" width="50" class="btn"></a>
+                        <img src="../Assets/setaB.png" alt="Seta" width="50" class="btn"></a>
                 </td>
             </tr>
             </table>
