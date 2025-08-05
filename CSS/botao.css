@@ -51,7 +51,7 @@
         }
 
         /* Estilo para o botão de colapsar */
-        .collapsible {
+        .collapsible, .not-collapsible {
             border-radius: 10px;
             text-align: center;
             font-family: 'proxima-soft', sans-serif;
@@ -71,7 +71,7 @@
             outline: none;
         }
 
-        .active, .collapsible:hover {
+        .active, .collapsible:hover, .not-collapsible:hover{
         background-color: #ca9ad66c;
         color: rgb(170, 135, 202);
         transition: background-color 0.3s ease, color 0.8s ease

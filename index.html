@@ -17,22 +17,25 @@
     <div class="linha-vertical-direita"></div>!-->
         <table class="tabela-central">           
             <tr>
-                <td class="Cabecalhodarkmode" id="header">
+                <td class="Cabecalhodarkmode Cabecalho" id="header">
             <div style="display: flex; justify-content: center; align-items: flex-start;">
                 
                 <!-- Título da página -->
                 <div style="display: flex; position: relative; left: 40px; top: 10px;">
-                    <h1 style="color:rgb(179, 180, 241); padding: 10px;"><ins>
-                        <a href="https://cristiano.convexcloud.com.br" target="_self" type="button">HOME</a></ins></h1>
+                    <header style="color:rgb(179, 180, 241); padding: 10px; font-family: 'Arrancar';"><ins>
+                        <a href="https://cristiano.convexcloud.com.br" target="_self" type="button">HOME</a></ins></header>
                 </div>
+                
                 <!-- Botão para alternar entre modos -->
-                <div style=" display: flex; position: relative; left: 400px; top: 10px">
+                <div style=" display: flex; position: relative; left: 800px; top: 10px">
                     <button id="toggle-mode" type="button" class="mode";>
                         <img id="mode-icon" src="Assets/solB.png" onclick="toggleMode()" alt="Sol" width="50" class="btn" style="bottom: 15px 0px;">
                     </button>
                 </div>
             </div>
-
+            <!-- Linhas verticais paralelas nas margens -->
+            <div class="linha-vertical-esquerda"></div>
+            <div class="linha-vertical-direita"></div>
                 <!-- Botões de Collapse-->
                 <div style="display: flex; justify-content: center; gap: 5px; margin-left: -55px; margin-top: 10px; align-items: center flex-start;">
                     <!-- Botão Páginas -->
@@ -51,17 +54,11 @@
 
                     <!-- Botão de Sobre-->
                     <div>
-                        <button style="width: 110px;" type="button" class="collapsible">Sobre</button>
-                        <!-- Conteúdo de Sobre -->
-                        <div class="content">
-                            <div class="div-coll">
-                                <a class="links-collapse" href="https://cristiano.convexcloud.com.br/Paginas/sobre.html" target="_self">Site</a>
-                            </div>
-                        </div>
-
-                        </div>
+                        <a class="links-notcollapse" href="https://cristiano.convexcloud.com.br/Paginas/Sobre.html" target="_self">
+                            <button style="width: 110px;" type="button" class="not-collapsible">Sobre</button>
+                        </a>
                     </div>
-                </div>      
+                </div>    
 
                 </td>
             </tr>
@@ -75,7 +72,7 @@
             <!-- Conteúdo da Página -->
 
             <tr>
-                    <th style="color:yellow; font-size:20px">See the following example image:</th>
+                    <th style="color:rgb(151, 151, 2); font-size:20px;">See the following example image:</th>
             </tr>
             <tr>    
                 <!-- Imagem de exemplo -->
@@ -139,7 +136,7 @@ isso é possível por conta da tag <code>&lt;pre&gt;</code>.
                         
                         <li style="color:rgb(151, 115, 192); font-size: 16px"><em>As listas são úteis para organizar informações.</em></li>
                         
-                        <li style="color:rgb(226, 175, 241); font-size: 14px">Você pode <mark style="background-color: red; color:white">usar</mark>
+                        <li style="color:rgb(169, 114, 185); font-size: 14px">Você pode <mark style="background-color: red; color:white">usar</mark>
                             <span style="color:blueviolet; font-weight: bold;">listas ordenadas</span> ou não ordenadas.</li>
                         
                     </ul>
@@ -152,7 +149,7 @@ isso é possível por conta da tag <code>&lt;pre&gt;</code>.
                         <hr style="border: px solid rgb(134, 124, 124); margin-bottom: 0px">
                     </td>
                 </tr>
-                <td id="header" class="Cabecalhodarkmode"  style="text-align:center; padding: 10px;">
+                <td class="Cabecalhodarkmode" id="header" style="text-align:center; padding: 10px;">
                         <!-- Link para a página anterior -->
                     <a href="https://cristiano.convexcloud.com.br" target="_self">
                     <br>
