@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br"> 
 <head>
-    <link rel="icon" href="/Assets/icon.png" type="image/png"> 
-    <title>Projeto</title>
+    <link rel="icon" href="/Assets/IconeM.png" type="image/png"> 
+    <title>Las Noches</title>
     <meta charset="UTF-8"> 
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
     <link rel="stylesheet" type="text/css" href="CSS/botao.css">
@@ -13,35 +13,34 @@
 <body class="darkmode">
     <script src="JS/JavaS.js" defer></script>
     <div class="container-central">
-    <!--<div class="linha-vertical-esquerda"></div>
-    <div class="linha-vertical-direita"></div>!-->
-        <table class="tabela-central">           
-            <tr>
-                <td class="Cabecalhodarkmode Cabecalho" id="header">
+    <div class="linha-vertical-esquerda"></div>
+    <div class="linha-vertical-direita"></div>
+
+    <!-- Cabeçalho -->
+    <div class="cabecalho-container">
+        <div class="Cabecalhodarkmode Cabecalho" id="header">
             <div style="display: flex; justify-content: center; align-items: flex-start;">
-                
                 <!-- Título da página -->
                 <div style="display: flex; position: relative; left: 40px; top: 10px;">
-                    <header style="color:rgb(179, 180, 241); padding: 10px; font-family: 'Arrancar';"><ins>
-                        <a href="https://cristiano.convexcloud.com.br" target="_self" type="button">HOME</a></ins></header>
+                    <header style="color:rgb(179, 180, 241); padding: 10px; font-family: 'Arrancar';">
+                        <a href="https://cristiano.convexcloud.com.br" class="title" target="_self" type="button">Las Noches</a>
+                    </header>
                 </div>
                 
                 <!-- Botão para alternar entre modos -->
-                <div style=" display: flex; position: relative; left: 800px; top: 10px">
-                    <button id="toggle-mode" type="button" class="mode";>
+                <div style=" display: flex; position: relative; left: 400px; top: 10px">
+                    <button id="toggle-mode" type="button" class="mode">
                         <img id="mode-icon" src="Assets/solB.png" onclick="toggleMode()" alt="Sol" width="50" class="btn" style="bottom: 15px 0px;">
                     </button>
                 </div>
             </div>
-            <!-- Linhas verticais paralelas nas margens -->
-            <div class="linha-vertical-esquerda"></div>
-            <div class="linha-vertical-direita"></div>
+            
                 <!-- Botões de Collapse-->
                 <div style="display: flex; justify-content: center; gap: 5px; margin-left: -55px; margin-top: 10px; align-items: center flex-start;">
-                    <!-- Botão Páginas -->
+                    <!-- Botão Espadas -->
                     <div>
-                        <button type="button" class="collapsible">Páginas</button>
-                            <!-- Conteúdo de Páginas -->
+                        <button type="button" class="collapsible">Espadas</button>
+                            <!-- Conteúdo de 'Espadas' -->
                         <div class="content">
                             <div class="div-coll">  
                                 <a class="links-collapse" href="https://cristiano.convexcloud.com.br/Paginas/pagina1.html" target="_self">Página 1</a></div>
@@ -58,21 +57,27 @@
                             <button style="width: 110px;" type="button" class="not-collapsible">Sobre</button>
                         </a>
                     </div>
-                </div>    
-
+                </div>
+            </div>    
+        </div>
+        
+        <table class="tabela-central">           
+            <tr>
+                <td class="Cabecalhodarkmode Cabecalho" id="header">
+    
                 </td>
             </tr>
             <tr>
                 <td>
                     <!--Linha horizontal-->
-                    <hr style="border: 1px solid purple; margin-top: -1px; margin-bottom: 30px">
+                    <hr style="border: 1px solid rgb(188, 202, 231); margin-top: -1px; margin-bottom: 30px">
                 </td>
             </tr>
 
             <!-- Conteúdo da Página -->
 
             <tr>
-                    <th style="color:rgb(151, 151, 2); font-size:20px;">See the following example image:</th>
+                    <th style="color:rgb(6, 150, 155); font-size:25px;">See the following example image:</th>
             </tr>
             <tr>    
                 <!-- Imagem de exemplo -->
@@ -92,23 +97,16 @@
                         >Este arquivo foi criado com o intuito de <br>
                         treinar códigos de HTML. :)</blockquote>
                     </div>    
+            
+                </td>
+            </tr>
+            
+            <tr>
+                <td style="text-align: center;">
                     <q style="color:rgb(59, 59, 59); font-size:1px">Citação</q> <!-- Citação minuscula -->
                 </td>
             </tr>
-            <tr>
-                <div style=" background-color: #fff;">
-                    <td style="text-align:center; padding:10px">
-                        <!--Texto de exemplo-->
-                        <pre style="color:lightpink; font-size:15px">
-Através deste texto é possível observar
-
-que mesmo sem quebra de linha, o texto segue os espaços e quebras,
-
-isso é possível por conta da tag <code>&lt;pre&gt;</code>.
-                        </pre>
-                    </td>
-                </div>
-            </tr> 
+            
             <tr style="padding: 30px">
                 <td>
                     <!--Lista 1-->
@@ -144,13 +142,13 @@ isso é possível por conta da tag <code>&lt;pre&gt;</code>.
             </tr>
             <!-- Link para a próxima página -->
             <tr>
-                <tr>
-                    <td>
-                        <hr style="border: px solid rgb(134, 124, 124); margin-bottom: 0px">
-                    </td>
-                </tr>
+                <td>
+                    <hr style="border: px solid rgb(134, 124, 124); margin-bottom: 0px">
+                </td>
+            </tr>
+            <tr>
                 <td class="Cabecalhodarkmode" id="header" style="text-align:center; padding: 10px;">
-                        <!-- Link para a página anterior -->
+                    <!-- Link para a página anterior -->
                     <a href="https://cristiano.convexcloud.com.br" target="_self">
                     <br>
                         <img src="Assets/setaB.png" alt="Seta" width="50" class="invalid-btn"></a>

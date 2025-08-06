@@ -63,8 +63,8 @@
             margin-right: 0px;
             display: inline-block;
             padding: 20px;
-            background-color: rgba(47, 6, 112, 0.445);
-            color: white;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
             cursor: pointer;
             width: auto ;
             border: none;
@@ -72,16 +72,16 @@
         }
 
         .active, .collapsible:hover, .not-collapsible:hover{
-        background-color: #ca9ad66c;
-        color: rgb(170, 135, 202);
-        transition: background-color 0.3s ease, color 0.8s ease
+        background-color: #565f6673;
+        color: rgb(255, 255, 255);
+        transition: background-color 0.3s ease, color 0.5s ease
         }
 
         /* Arrowhead direto no botão de collapse */
         .collapsible:after {
         content: '\25BC';
         font-size: 10px; 
-        color: white;  
+        color: rgb(105, 105, 105);  
         margin-left: 5px;
         margin-right: 0px;
         font-weight: bold;
