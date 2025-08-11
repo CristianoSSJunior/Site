@@ -12,13 +12,12 @@
 </head>
 <body class="darkmode">
     <script src="JS/JavaS.js" defer></script>
-    <div class="container-central">
     <div class="linha-vertical-esquerda"></div>
     <div class="linha-vertical-direita"></div>
 
-    <!-- Cabeçalho -->
+    <!-- Cabeçalho fora da tabela -->
     <div class="cabecalho-container">
-        <div class="Cabecalhodarkmode Cabecalho" id="header">
+        <div class="Cabecalhodarkmode" id="header">
             <div style="display: flex; justify-content: center; align-items: flex-start;">
                 <!-- Título da página -->
                 <div style="display: flex; position: relative; left: 40px; top: 10px;">
@@ -30,13 +29,13 @@
                 <!-- Botão para alternar entre modos -->
                 <div style=" display: flex; position: relative; left: 400px; top: 10px">
                     <button id="toggle-mode" type="button" class="mode">
-                        <img id="mode-icon" src="Assets/solB.png" onclick="toggleMode()" alt="Sol" width="50" class="btn" style="bottom: 15px 0px;">
+                        <img id="mode-icon" src="Assets/solB.png" onclick="togglemode()" alt="Sol" width="50" class="btn" style="bottom: 15px 0px;">
                     </button>
                 </div>
             </div>
             
                 <!-- Botões de Collapse-->
-                <div style="display: flex; justify-content: center; gap: 5px; margin-left: -55px; margin-top: 10px; align-items: center flex-start;">
+                <div style="display: flex; justify-content: center; gap: 5px; margin-left: -55px; margin-top: 10px;">
                     <!-- Botão Espadas -->
                     <div>
                         <button type="button" class="collapsible">Espadas</button>
@@ -61,6 +60,10 @@
             </div>    
         </div>
         
+        <!-- Espaço para o cabeçalho 
+        <div id=""></div> -->
+        
+        <!-- Início da tabela -->
         <table class="tabela-central">           
             <tr>
                 <td class="Cabecalhodarkmode Cabecalho" id="header">
@@ -140,24 +143,23 @@
                     </ul>
                 </td>
             </tr>
+        </table>
+
             <!-- Link para a próxima página -->
             <tr>
                 <td>
                     <hr style="border: px solid rgb(134, 124, 124); margin-bottom: 0px">
                 </td>
             </tr>
-            <tr>
-                <td class="Cabecalhodarkmode" id="header" style="text-align:center; padding: 10px;">
-                    <!-- Link para a página anterior -->
-                    <a href="https://cristiano.convexcloud.com.br" target="_self">
+            
+            <div class="Cabecalhodarkmode" id="rodape" style="text-align:center;">
+                <!-- Link para a página anterior -->
+                <a href="https://cristiano.convexcloud.com.br" target="_self">
                     <br>
-                        <img src="Assets/setaB.png" alt="Seta" width="50" class="invalid-btn"></a>
-                        
+                        <img src="Assets/setaB.png" alt="Seta" width="50" class="invalid-btn"></a> 
                     <a href="https://cristiano.convexcloud.com.br/Paginas/pagina1.html" target="_self">
-                        <img src="Assets/setaB.png" alt="Seta" width="50" class="btn"></a>
-                </td>
-            </tr>
-            </table>
-        </div>
+                <img src="Assets/setaB.png" alt="Seta" width="50" class="btn"></a>
+            </div>
+
     </body>
 </html>
