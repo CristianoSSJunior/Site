@@ -19,24 +19,21 @@ for (i = 0; i < coll.length; i++) {
         document.body.classList.toggle('darkmode');
         document.body.classList.toggle('lightmode');
         // Troca o texto do botão
-        let modeIcon = document.getElementById('mode-icon');
-        if (document.body.classList.contains('lightmode')) {
-            modeIcon.src = 'Assets/moon.png'; // Ícone para modo claro
-            modeIcon.alt = 'Modo Claro';
-            document.getElementById('header').classList.add('Cabecalholightmode');
-            document.getElementById('header').classList.remove('Cabecalhodarkmode');
-            document.getElementById('rodape').classList.add('Cabecalholightmode');
-            document.getElementById('rodape').classList.remove('Cabecalhodarkmode');
+        let icon = document.getElementById('mode-icon');
+        let header = document.getElementById('header');
+        let rodape = document.getElementById('rodape');
+        let table = document.getElementById('table');
+        let isLight = document.body.classList.contains('lightmode');
+        
+        icon.src = isLight ? 'Assets/moon.png' : 'Assets/solB.png';
+        icon.alt = isLight ? 'Modo escuro' : 'Modo claro';
 
-        } else {
-            modeIcon.src = 'Assets/solB.png'; // Ícone para modo escuro
-            modeIcon.alt = 'Modo Escuro';
-            document.getElementById('header').classList.add('Cabecalhodarkmode');
-            document.getElementById('rodape').classList.add('Cabecalhodarkmode');
-            document.getElementById('header').classList.remove('Cabecalholightmode');
-            document.getElementById('rodape').classList.remove('Cabecalholightmode');
-            
-        }
+        header.classList.toggle('Cabecalhodarkmode', !isLight)
+        header.classList.toggle('Cabecalholightmode', isLight)
+        rodape.classList.toggle('Cabecalhodarkmode', !isLight)
+        rodape.classList.toggle('Cabecalholightmode', isLight)
+        table.classList.toggle('tabela-dark', !isLight)
+    table.classList.toggle('tabela-light', isLight)
     };
 
 // Funções para exibir e esconder o texto

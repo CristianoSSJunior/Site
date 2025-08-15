@@ -28,14 +28,14 @@
                 
                 <!-- Botão para alternar entre modos -->
                 <div style=" display: flex; position: relative; left: 400px; top: 10px">
-                    <button id="toggle-mode" type="button" class="mode">
-                        <img id="mode-icon" src="Assets/solB.png" onclick="togglemode()" alt="Sol" width="50" class="btn" style="bottom: 15px 0px;">
+                    <button id="toggle-mode" class="mode">
+                        <img id="mode-icon" src="Assets/solB.png" onclick="togglemode()" alt="Sol" width="50" class="btn">
                     </button>
                 </div>
             </div>
             
                 <!-- Botões de Collapse-->
-                <div style="display: flex; justify-content: center; gap: 5px; margin-left: -55px; margin-top: 10px;">
+                <div style="display: flex; justify-content: center; gap: 5px; margin-left: -50px; margin-top: 5px">
                     <!-- Botão Espadas -->
                     <div>
                         <button type="button" class="collapsible">Espadas</button>
@@ -57,34 +57,24 @@
                         </a>
                     </div>
                 </div>
-            </div>    
-        </div>
-        
-        <!-- Espaço para o cabeçalho 
-        <div id=""></div> -->
-        
-        <!-- Início da tabela -->
-        <table class="tabela-central">           
-            <tr>
-                <td class="Cabecalhodarkmode Cabecalho" id="header">
-    
-                </td>
-            </tr>
-            <tr>
-                <td>
+                <div>
                     <!--Linha horizontal-->
-                    <hr style="border: 1px solid rgb(188, 202, 231); margin-top: -1px; margin-bottom: 30px">
-                </td>
-            </tr>
-
+                    <hr style="border: 0.5px solid #3d444d; margin-top: 1px; margin-bottom: -10px">
+                </div>
+            </div>
+        </div>
+    
+        <!-- Início da tabela -->
+        <table id="table" class="tabela-dark">           
             <!-- Conteúdo da Página -->
-
-            <tr>
-                    <th style="color:rgb(6, 150, 155); font-size:25px;">See the following example image:</th>
-            </tr>
+             
             <tr>    
                 <!-- Imagem de exemplo -->
                 <td style="text-align:center; padding:10px">
+                    <div style="display: flex; justify-content: center; align-items: center; margin: 15px;">
+                        <div style="color:rgb(6, 150, 155); font-size:25px">See the following example image: </div>
+                    </div>
+
                     <img src="/Assets/exampledark.jpg" alt="Dark example" width="500"
                      style="border: 2px solid rgb(131, 131, 131); border-radius: 5px; color: white">
                     <hr>
@@ -148,7 +138,7 @@
             <!-- Link para a próxima página -->
             <tr>
                 <td>
-                    <hr style="border: px solid rgb(134, 124, 124); margin-bottom: 0px">
+                    <hr style="border: 1px solid #3d444d; margin-bottom: 0px; margin-top: 0px">
                 </td>
             </tr>
             
@@ -160,6 +150,5 @@
                     <a href="https://cristiano.convexcloud.com.br/Paginas/pagina1.html" target="_self">
                 <img src="Assets/setaB.png" alt="Seta" width="50" class="btn"></a>
             </div>
-
     </body>
 </html>
